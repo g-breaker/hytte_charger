@@ -14,39 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	7300 3300 7300 3150
-$Comp
-L dk_Diodes-Rectifiers-Single:1N4148 D2
-U 1 1 5D0644B2
-P 7300 2950
-F 0 "D2" H 7350 3175 50  0000 C CNN
-F 1 "1N4148" H 7350 3084 50  0000 C CNN
-F 2 "digikey-footprints:Diode_DO-35_P10mm" H 7500 3150 60  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/1N914-D.PDF" H 7500 3250 60  0001 L CNN
-F 4 "1N4148FS-ND" H 7500 3350 60  0001 L CNN "Digi-Key_PN"
-F 5 "1N4148" H 7500 3450 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 7500 3550 60  0001 L CNN "Category"
-F 7 "Diodes - Rectifiers - Single" H 7500 3650 60  0001 L CNN "Family"
-F 8 "https://www.onsemi.com/pub/Collateral/1N914-D.PDF" H 7500 3750 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/1N4148/1N4148FS-ND/458603" H 7500 3850 60  0001 L CNN "DK_Detail_Page"
-F 10 "DIODE GEN PURP 100V 200MA DO35" H 7500 3950 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 7500 4050 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 7500 4150 60  0001 L CNN "Status"
-	1    7300 2950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5D0652E0
-P 7300 2400
-F 0 "R6" H 7370 2446 50  0000 L CNN
-F 1 "10k" H 7370 2355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7230 2400 50  0001 C CNN
-F 3 "~" H 7300 2400 50  0001 C CNN
-	1    7300 2400
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+12V #PWR01
 U 1 1 5D093226
@@ -308,8 +275,6 @@ Wire Wire Line
 Wire Wire Line
 	4850 1850 4850 1950
 Connection ~ 4350 1850
-Wire Wire Line
-	4850 1850 4850 1200
 Connection ~ 4850 1850
 Wire Wire Line
 	1850 2200 2100 2200
@@ -328,104 +293,6 @@ F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/08/03/
 	1    2650 2000
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR04
-U 1 1 5D11FAA2
-P 5650 1100
-F 0 "#PWR04" H 5650 950 50  0001 C CNN
-F 1 "+5V" H 5665 1273 50  0000 C CNN
-F 2 "" H 5650 1100 50  0001 C CNN
-F 3 "" H 5650 1100 50  0001 C CNN
-	1    5650 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 1100 5650 1900
-$Comp
-L dk_Transistors-FETs-MOSFETs-Single:AO3401A Q1
-U 1 1 5D09A868
-P 6700 1900
-F 0 "Q1" V 6967 1900 60  0000 C CNN
-F 1 "AO3401A" V 6861 1900 60  0000 C CNN
-F 2 "digikey-footprints:SOT-23-3" H 6900 2100 60  0001 L CNN
-F 3 "http://aosmd.com/res/data_sheets/AO3401A.pdf" H 6900 2200 60  0001 L CNN
-F 4 "785-1001-1-ND" H 6900 2300 60  0001 L CNN "Digi-Key_PN"
-F 5 "AO3401A" H 6900 2400 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6900 2500 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 6900 2600 60  0001 L CNN "Family"
-F 8 "http://aosmd.com/res/data_sheets/AO3401A.pdf" H 6900 2700 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/alpha-omega-semiconductor-inc/AO3401A/785-1001-1-ND/1855943" H 6900 2800 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET P-CH 30V 4A SOT23" H 6900 2900 60  0001 L CNN "Description"
-F 11 "Alpha & Omega Semiconductor Inc." H 6900 3000 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6900 3100 60  0001 L CNN "Status"
-	1    6700 1900
-	0    1    -1   0   
-$EndComp
-$Comp
-L dk_Transistors-Bipolar-BJT-Single:2N2222A Q2
-U 1 1 5D0B29BA
-P 6700 2800
-F 0 "Q2" H 6888 2853 60  0000 L CNN
-F 1 "2N2222A" H 6888 2747 60  0000 L CNN
-F 2 "digikey-footprints:TO-18-3" H 6900 3000 60  0001 L CNN
-F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 6900 3100 60  0001 L CNN
-F 4 "2N2222ACS-ND" H 6900 3200 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N2222A" H 6900 3300 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6900 3400 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 6900 3500 60  0001 L CNN "Family"
-F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 6900 3600 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 6900 3700 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.8A TO-18" H 6900 3800 60  0001 L CNN "Description"
-F 11 "Central Semiconductor Corp" H 6900 3900 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6900 4000 60  0001 L CNN "Status"
-	1    6700 2800
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 1900 6000 1900
-Wire Wire Line
-	6000 1900 6000 2100
-Connection ~ 6000 1900
-Wire Wire Line
-	6000 1900 6500 1900
-Wire Wire Line
-	6000 2400 6000 2500
-Wire Wire Line
-	6000 2500 6600 2500
-Wire Wire Line
-	6600 2500 6600 2200
-Wire Wire Line
-	6600 2500 6600 2600
-Connection ~ 6600 2500
-Wire Wire Line
-	6900 2800 7300 2800
-Wire Wire Line
-	7300 1900 6900 1900
-Wire Wire Line
-	6600 3000 6600 3300
-Wire Wire Line
-	6600 3300 5650 3300
-Wire Wire Line
-	5650 3300 5650 3550
-$Comp
-L power:GND #PWR05
-U 1 1 5D0BC85E
-P 5650 3550
-F 0 "#PWR05" H 5650 3300 50  0001 C CNN
-F 1 "GND" H 5655 3377 50  0000 C CNN
-F 2 "" H 5650 3550 50  0001 C CNN
-F 3 "" H 5650 3550 50  0001 C CNN
-	1    5650 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 2550 7300 2800
-Wire Wire Line
-	7300 2800 7300 2850
-Connection ~ 7300 2800
-Wire Wire Line
-	7300 3300 6600 3300
-Connection ~ 6600 3300
 $Comp
 L dk_USB-DVI-HDMI-Connectors:UE27AC54100 J1
 U 1 1 5D0D6B04
@@ -447,11 +314,6 @@ F 12 "Active" H 9150 3000 60  0001 L CNN "Status"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7300 1900 7300 2250
-Wire Wire Line
-	7300 1900 8650 1900
-Connection ~ 7300 1900
-Wire Wire Line
 	8650 1600 8650 1400
 Wire Wire Line
 	8650 1400 8350 1400
@@ -467,54 +329,6 @@ F 2 "" H 8350 1500 50  0001 C CNN
 F 3 "" H 8350 1500 50  0001 C CNN
 	1    8350 1500
 	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Rectangular-Connectors-Headers-Male-Pins:22-23-2021 J4
-U 1 1 5D0F1B5B
-P 7700 1450
-F 0 "J4" H 7612 1412 50  0000 R CNN
-F 1 "22-23-2021" H 7612 1503 50  0000 R CNN
-F 2 "digikey-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 7900 1650 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 7900 1750 60  0001 L CNN
-F 4 "WM4200-ND" H 7900 1850 60  0001 L CNN "Digi-Key_PN"
-F 5 "22-23-2021" H 7900 1950 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 7900 2050 60  0001 L CNN "Category"
-F 7 "Rectangular Connectors - Headers, Male Pins" H 7900 2150 60  0001 L CNN "Family"
-F 8 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 7900 2250 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/molex/22-23-2021/WM4200-ND/26667" H 7900 2350 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN HEADER VERT 2POS 2.54MM" H 7900 2450 60  0001 L CNN "Description"
-F 11 "Molex" H 7900 2550 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 7900 2650 60  0001 L CNN "Status"
-	1    7700 1450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8650 1800 7600 1800
-Wire Wire Line
-	7600 1800 7600 1550
-Wire Wire Line
-	8650 1700 7700 1700
-Wire Wire Line
-	7700 1700 7700 1550
-$Comp
-L dk_Rectangular-Connectors-Headers-Male-Pins:22-23-2021 J3
-U 1 1 5D0FD41F
-P 5300 750
-F 0 "J3" H 5212 712 50  0000 R CNN
-F 1 "22-23-2021" H 5212 803 50  0000 R CNN
-F 2 "digikey-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 5500 950 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 5500 1050 60  0001 L CNN
-F 4 "WM4200-ND" H 5500 1150 60  0001 L CNN "Digi-Key_PN"
-F 5 "22-23-2021" H 5500 1250 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 5500 1350 60  0001 L CNN "Category"
-F 7 "Rectangular Connectors - Headers, Male Pins" H 5500 1450 60  0001 L CNN "Family"
-F 8 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 5500 1550 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/molex/22-23-2021/WM4200-ND/26667" H 5500 1650 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN HEADER VERT 2POS 2.54MM" H 5500 1750 60  0001 L CNN "Description"
-F 11 "Molex" H 5500 1850 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5500 1950 60  0001 L CNN "Status"
-	1    5300 750 
-	-1   0    0    1   
 $EndComp
 $Comp
 L dk_Rectangular-Connectors-Headers-Male-Pins:22-23-2021 J2
@@ -547,19 +361,12 @@ Wire Wire Line
 	650  800  750  800 
 Connection ~ 650  800 
 Wire Wire Line
-	4850 1200 5200 1200
-Wire Wire Line
-	5200 1200 5200 850 
+	2950 3350 3850 3350
 Connection ~ 4850 1200
 Wire Wire Line
 	4850 1200 4850 1100
 Wire Wire Line
-	5200 850  5300 850 
-Connection ~ 5200 850 
-Text Label 7750 1800 0    50   ~ 0
-D-
-Text Label 7750 1700 0    50   ~ 0
-D+
+	4850 1850 4850 1200
 $Comp
 L Device:R R5
 U 1 1 5D066793
@@ -571,6 +378,229 @@ F 3 "~" H 6000 2250 50  0001 C CNN
 	1    6000 2250
 	1    0    0    -1  
 $EndComp
+Text Label 7750 1700 0    50   ~ 0
+D+
+Text Label 7750 1800 0    50   ~ 0
+D-
+Connection ~ 5200 850 
 Wire Wire Line
-	2950 3350 3850 3350
+	5200 850  5300 850 
+Wire Wire Line
+	5200 1200 5200 850 
+Wire Wire Line
+	4850 1200 5200 1200
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:22-23-2021 J3
+U 1 1 5D0FD41F
+P 5300 750
+F 0 "J3" H 5212 712 50  0000 R CNN
+F 1 "22-23-2021" H 5212 803 50  0000 R CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 5500 950 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 5500 1050 60  0001 L CNN
+F 4 "WM4200-ND" H 5500 1150 60  0001 L CNN "Digi-Key_PN"
+F 5 "22-23-2021" H 5500 1250 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 5500 1350 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 5500 1450 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 5500 1550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/molex/22-23-2021/WM4200-ND/26667" H 5500 1650 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2.54MM" H 5500 1750 60  0001 L CNN "Description"
+F 11 "Molex" H 5500 1850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5500 1950 60  0001 L CNN "Status"
+	1    5300 750 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 1700 7700 1550
+Wire Wire Line
+	8650 1700 7700 1700
+Wire Wire Line
+	7600 1800 7600 1550
+Wire Wire Line
+	8650 1800 7600 1800
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:22-23-2021 J4
+U 1 1 5D0F1B5B
+P 7700 1450
+F 0 "J4" H 7612 1412 50  0000 R CNN
+F 1 "22-23-2021" H 7612 1503 50  0000 R CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 7900 1650 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 7900 1750 60  0001 L CNN
+F 4 "WM4200-ND" H 7900 1850 60  0001 L CNN "Digi-Key_PN"
+F 5 "22-23-2021" H 7900 1950 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 7900 2050 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 7900 2150 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 7900 2250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/molex/22-23-2021/WM4200-ND/26667" H 7900 2350 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2.54MM" H 7900 2450 60  0001 L CNN "Description"
+F 11 "Molex" H 7900 2550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7900 2650 60  0001 L CNN "Status"
+	1    7700 1450
+	-1   0    0    1   
+$EndComp
+Connection ~ 7300 1900
+Wire Wire Line
+	7300 1900 8300 1900
+Wire Wire Line
+	7300 1900 7300 2250
+Connection ~ 6600 3300
+Wire Wire Line
+	7300 3300 6600 3300
+Connection ~ 7300 2800
+Wire Wire Line
+	7300 2800 7300 2850
+Wire Wire Line
+	7300 2550 7300 2800
+$Comp
+L power:GND #PWR05
+U 1 1 5D0BC85E
+P 5650 3550
+F 0 "#PWR05" H 5650 3300 50  0001 C CNN
+F 1 "GND" H 5655 3377 50  0000 C CNN
+F 2 "" H 5650 3550 50  0001 C CNN
+F 3 "" H 5650 3550 50  0001 C CNN
+	1    5650 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3300 5650 3550
+Wire Wire Line
+	6600 3300 5650 3300
+Wire Wire Line
+	6600 3000 6600 3300
+Wire Wire Line
+	7300 1900 6900 1900
+Wire Wire Line
+	6900 2800 7300 2800
+Connection ~ 6600 2500
+Wire Wire Line
+	6600 2500 6600 2600
+Wire Wire Line
+	6600 2500 6600 2200
+Wire Wire Line
+	6000 2500 6600 2500
+Wire Wire Line
+	6000 2400 6000 2500
+Wire Wire Line
+	6000 1900 6500 1900
+Connection ~ 6000 1900
+Wire Wire Line
+	6000 1900 6000 2100
+Wire Wire Line
+	5650 1900 6000 1900
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:2N2222A Q2
+U 1 1 5D0B29BA
+P 6700 2800
+F 0 "Q2" H 6888 2853 60  0000 L CNN
+F 1 "2N2222A" H 6888 2747 60  0000 L CNN
+F 2 "digikey-footprints:TO-18-3" H 6900 3000 60  0001 L CNN
+F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 6900 3100 60  0001 L CNN
+F 4 "2N2222ACS-ND" H 6900 3200 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N2222A" H 6900 3300 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6900 3400 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6900 3500 60  0001 L CNN "Family"
+F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 6900 3600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 6900 3700 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.8A TO-18" H 6900 3800 60  0001 L CNN "Description"
+F 11 "Central Semiconductor Corp" H 6900 3900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6900 4000 60  0001 L CNN "Status"
+	1    6700 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:AO3401A Q1
+U 1 1 5D09A868
+P 6700 1900
+F 0 "Q1" V 6967 1900 60  0000 C CNN
+F 1 "AO3401A" V 6861 1900 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 6900 2100 60  0001 L CNN
+F 3 "http://aosmd.com/res/data_sheets/AO3401A.pdf" H 6900 2200 60  0001 L CNN
+F 4 "785-1001-1-ND" H 6900 2300 60  0001 L CNN "Digi-Key_PN"
+F 5 "AO3401A" H 6900 2400 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6900 2500 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 6900 2600 60  0001 L CNN "Family"
+F 8 "http://aosmd.com/res/data_sheets/AO3401A.pdf" H 6900 2700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/alpha-omega-semiconductor-inc/AO3401A/785-1001-1-ND/1855943" H 6900 2800 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 30V 4A SOT23" H 6900 2900 60  0001 L CNN "Description"
+F 11 "Alpha & Omega Semiconductor Inc." H 6900 3000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6900 3100 60  0001 L CNN "Status"
+	1    6700 1900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5650 1100 5650 1900
+$Comp
+L power:+5V #PWR04
+U 1 1 5D11FAA2
+P 5650 1100
+F 0 "#PWR04" H 5650 950 50  0001 C CNN
+F 1 "+5V" H 5665 1273 50  0000 C CNN
+F 2 "" H 5650 1100 50  0001 C CNN
+F 3 "" H 5650 1100 50  0001 C CNN
+	1    5650 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5D0652E0
+P 7300 2400
+F 0 "R6" H 7370 2446 50  0000 L CNN
+F 1 "10k" H 7370 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7230 2400 50  0001 C CNN
+F 3 "~" H 7300 2400 50  0001 C CNN
+	1    7300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Diodes-Rectifiers-Single:1N4148 D2
+U 1 1 5D0644B2
+P 7300 2950
+F 0 "D2" H 7350 3175 50  0000 C CNN
+F 1 "1N4148" H 7350 3084 50  0000 C CNN
+F 2 "digikey-footprints:Diode_DO-35_P10mm" H 7500 3150 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/1N914-D.PDF" H 7500 3250 60  0001 L CNN
+F 4 "1N4148FS-ND" H 7500 3350 60  0001 L CNN "Digi-Key_PN"
+F 5 "1N4148" H 7500 3450 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 7500 3550 60  0001 L CNN "Category"
+F 7 "Diodes - Rectifiers - Single" H 7500 3650 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/1N914-D.PDF" H 7500 3750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/1N4148/1N4148FS-ND/458603" H 7500 3850 60  0001 L CNN "DK_Detail_Page"
+F 10 "DIODE GEN PURP 100V 200MA DO35" H 7500 3950 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 7500 4050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7500 4150 60  0001 L CNN "Status"
+	1    7300 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 3300 7300 3150
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:22-23-2021 J5
+U 1 1 5D7CBCFE
+P 8300 2400
+F 0 "J5" H 8212 2362 50  0000 R CNN
+F 1 "22-23-2021" H 8212 2453 50  0000 R CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 8500 2600 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 8500 2700 60  0001 L CNN
+F 4 "WM4200-ND" H 8500 2800 60  0001 L CNN "Digi-Key_PN"
+F 5 "22-23-2021" H 8500 2900 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 8500 3000 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 8500 3100 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 8500 3200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/molex/22-23-2021/WM4200-ND/26667" H 8500 3300 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2.54MM" H 8500 3400 60  0001 L CNN "Description"
+F 11 "Molex" H 8500 3500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8500 3600 60  0001 L CNN "Status"
+	1    8300 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2300 8300 1900
+Connection ~ 8300 1900
+Wire Wire Line
+	8300 1900 8400 1900
+Wire Wire Line
+	8400 2300 8400 1900
+Connection ~ 8400 1900
+Wire Wire Line
+	8400 1900 8650 1900
 $EndSCHEMATC
