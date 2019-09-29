@@ -17,12 +17,12 @@ $EndDescr
 $Comp
 L power:+12V #PWR01
 U 1 1 5D093226
-P 750 1100
-F 0 "#PWR01" H 750 950 50  0001 C CNN
-F 1 "+12V" H 765 1273 50  0000 C CNN
-F 2 "" H 750 1100 50  0001 C CNN
-F 3 "" H 750 1100 50  0001 C CNN
-	1    750  1100
+P 750 800
+F 0 "#PWR01" H 750 650 50  0001 C CNN
+F 1 "+12V" H 765 973 50  0000 C CNN
+F 2 "" H 750 800 50  0001 C CNN
+F 3 "" H 750 800 50  0001 C CNN
+	1    750  800 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -163,8 +163,6 @@ F 3 "~" H 3450 2600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	750  1100 750  1200
-Wire Wire Line
 	1600 1500 1600 1550
 Connection ~ 1600 1500
 Wire Wire Line
@@ -179,15 +177,12 @@ Wire Wire Line
 	1850 3350 2600 3350
 Wire Wire Line
 	750  1500 750  2200
-Connection ~ 750  1500
 Wire Wire Line
 	750  2500 750  3350
 Wire Wire Line
 	750  3350 1150 3350
 Wire Wire Line
 	1150 2200 1150 1500
-Wire Wire Line
-	750  1500 1150 1500
 Connection ~ 1150 1500
 Wire Wire Line
 	1150 1500 1600 1500
@@ -293,28 +288,6 @@ F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/08/03/
 	1    2650 2000
 	1    0    0    -1  
 $EndComp
-$Comp
-L dk_USB-DVI-HDMI-Connectors:UE27AC54100 J1
-U 1 1 5D0D6B04
-P 8950 1800
-F 0 "J1" H 8847 1845 60  0000 R CNN
-F 1 "UE27AC54100" H 8847 1739 60  0000 R CNN
-F 2 "digikey-footprints:USB_A_Female_UE27AC54100" H 9150 2000 60  0001 L CNN
-F 3 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" H 9150 2100 60  0001 L CNN
-F 4 "UE27AC54100-ND" H 9150 2200 60  0001 L CNN "Digi-Key_PN"
-F 5 "UE27AC54100" H 9150 2300 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 9150 2400 60  0001 L CNN "Category"
-F 7 "USB, DVI, HDMI Connectors" H 9150 2500 60  0001 L CNN "Family"
-F 8 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" H 9150 2600 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/amphenol-icc-commercial-products/UE27AC54100/UE27AC54100-ND/1972253" H 9150 2700 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN RCPT USB2.0 TYPEA 4POS R/A" H 9150 2800 60  0001 L CNN "Description"
-F 11 "Amphenol ICC (Commercial Products)" H 9150 2900 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9150 3000 60  0001 L CNN "Status"
-	1    8950 1800
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	8650 1600 8650 1400
 Wire Wire Line
 	8650 1400 8350 1400
 Wire Wire Line
@@ -333,33 +306,23 @@ $EndComp
 $Comp
 L dk_Rectangular-Connectors-Headers-Male-Pins:22-23-2021 J2
 U 1 1 5D0FFAE0
-P 750 700
-F 0 "J2" H 662 662 50  0000 R CNN
-F 1 "22-23-2021" H 662 753 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 950 900 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 950 1000 60  0001 L CNN
-F 4 "WM4200-ND" H 950 1100 60  0001 L CNN "Digi-Key_PN"
-F 5 "22-23-2021" H 950 1200 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 950 1300 60  0001 L CNN "Category"
-F 7 "Rectangular Connectors - Headers, Male Pins" H 950 1400 60  0001 L CNN "Family"
-F 8 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 950 1500 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/molex/22-23-2021/WM4200-ND/26667" H 950 1600 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN HEADER VERT 2POS 2.54MM" H 950 1700 60  0001 L CNN "Description"
-F 11 "Molex" H 950 1800 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 950 1900 60  0001 L CNN "Status"
-	1    750  700 
+P 1250 700
+F 0 "J2" H 1162 662 50  0000 R CNN
+F 1 "22-23-2021" H 1162 753 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1450 900 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 1450 1000 60  0001 L CNN
+F 4 "WM4200-ND" H 1450 1100 60  0001 L CNN "Digi-Key_PN"
+F 5 "22-23-2021" H 1450 1200 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 1450 1300 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 1450 1400 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 1450 1500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/molex/22-23-2021/WM4200-ND/26667" H 1450 1600 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2.54MM" H 1450 1700 60  0001 L CNN "Description"
+F 11 "Molex" H 1450 1800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1450 1900 60  0001 L CNN "Status"
+	1    1250 700 
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	750  1200 650  1200
-Wire Wire Line
-	650  1200 650  800 
-Connection ~ 750  1200
-Wire Wire Line
-	750  1200 750  1500
-Wire Wire Line
-	650  800  750  800 
-Connection ~ 650  800 
 Wire Wire Line
 	2950 3350 3850 3350
 Connection ~ 4850 1200
@@ -629,4 +592,88 @@ Connection ~ 5650 3300
 Wire Wire Line
 	5650 3150 5750 3150
 Connection ~ 5650 3150
+$Comp
+L Device:Polyfuse F1
+U 1 1 5D932483
+P 750 1150
+F 0 "F1" H 838 1196 50  0000 L CNN
+F 1 "Polyfuse" H 838 1105 50  0000 L CNN
+F 2 "Fuse:Fuse_Bourns_MF-RHT300" H 800 950 50  0001 L CNN
+F 3 "~" H 750 1150 50  0001 C CNN
+	1    750  1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  1500 1150 1500
+Wire Wire Line
+	750  800  750  900 
+Wire Wire Line
+	750  1300 750  1350
+Connection ~ 750  1500
+Wire Wire Line
+	750  900  1150 900 
+Wire Wire Line
+	1150 900  1150 800 
+Connection ~ 750  900 
+Wire Wire Line
+	750  900  750  1000
+Connection ~ 750  1350
+Wire Wire Line
+	750  1350 750  1500
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:22-23-2021 J7
+U 1 1 5D979866
+P 1900 1050
+F 0 "J7" H 2078 1104 50  0000 L CNN
+F 1 "22-23-2021" H 2078 1013 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2100 1250 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 2100 1350 60  0001 L CNN
+F 4 "WM4200-ND" H 2100 1450 60  0001 L CNN "Digi-Key_PN"
+F 5 "22-23-2021" H 2100 1550 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 2100 1650 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 2100 1750 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 2100 1850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/molex/22-23-2021/WM4200-ND/26667" H 2100 1950 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2.54MM" H 2100 2050 60  0001 L CNN "Description"
+F 11 "Molex" H 2100 2150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2100 2250 60  0001 L CNN "Status"
+	1    1900 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 900  1250 900 
+Wire Wire Line
+	1250 900  1250 800 
+Connection ~ 1150 900 
+Wire Wire Line
+	1800 1350 1800 1150
+Wire Wire Line
+	750  1350 1800 1350
+Wire Wire Line
+	1800 1350 1900 1350
+Wire Wire Line
+	1900 1350 1900 1150
+Connection ~ 1800 1350
+Wire Wire Line
+	8650 1600 8650 1400
+$Comp
+L dk_USB-DVI-HDMI-Connectors:UE27AC54100 J1
+U 1 1 5D0D6B04
+P 8950 1800
+F 0 "J1" H 8847 1845 60  0000 R CNN
+F 1 "UE27AC54100" H 8847 1739 60  0000 R CNN
+F 2 "digikey-footprints:USB_A_Female_UE27AC54100" H 9150 2000 60  0001 L CNN
+F 3 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" H 9150 2100 60  0001 L CNN
+F 4 "UE27AC54100-ND" H 9150 2200 60  0001 L CNN "Digi-Key_PN"
+F 5 "UE27AC54100" H 9150 2300 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 9150 2400 60  0001 L CNN "Category"
+F 7 "USB, DVI, HDMI Connectors" H 9150 2500 60  0001 L CNN "Family"
+F 8 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" H 9150 2600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/amphenol-icc-commercial-products/UE27AC54100/UE27AC54100-ND/1972253" H 9150 2700 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN RCPT USB2.0 TYPEA 4POS R/A" H 9150 2800 60  0001 L CNN "Description"
+F 11 "Amphenol ICC (Commercial Products)" H 9150 2900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9150 3000 60  0001 L CNN "Status"
+	1    8950 1800
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
