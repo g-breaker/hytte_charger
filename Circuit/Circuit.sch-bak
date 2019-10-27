@@ -288,28 +288,6 @@ F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/08/03/
 	1    2650 2000
 	1    0    0    -1  
 $EndComp
-$Comp
-L dk_USB-DVI-HDMI-Connectors:UE27AC54100 J1
-U 1 1 5D0D6B04
-P 8950 1800
-F 0 "J1" H 8847 1845 60  0000 R CNN
-F 1 "UE27AC54100" H 8847 1739 60  0000 R CNN
-F 2 "digikey-footprints:USB_A_Female_UE27AC54100" H 9150 2000 60  0001 L CNN
-F 3 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" H 9150 2100 60  0001 L CNN
-F 4 "UE27AC54100-ND" H 9150 2200 60  0001 L CNN "Digi-Key_PN"
-F 5 "UE27AC54100" H 9150 2300 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 9150 2400 60  0001 L CNN "Category"
-F 7 "USB, DVI, HDMI Connectors" H 9150 2500 60  0001 L CNN "Family"
-F 8 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" H 9150 2600 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/amphenol-icc-commercial-products/UE27AC54100/UE27AC54100-ND/1972253" H 9150 2700 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN RCPT USB2.0 TYPEA 4POS R/A" H 9150 2800 60  0001 L CNN "Description"
-F 11 "Amphenol ICC (Commercial Products)" H 9150 2900 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9150 3000 60  0001 L CNN "Status"
-	1    8950 1800
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	8650 1600 8650 1400
 Wire Wire Line
 	8650 1400 8350 1400
 Wire Wire Line
@@ -676,17 +654,26 @@ Wire Wire Line
 Wire Wire Line
 	1900 1350 1900 1150
 Connection ~ 1800 1350
-$Comp
-L power:GND #PWR?
-U 1 1 5D99F7E8
-P 8825 2440
-F 0 "#PWR?" H 8825 2190 50  0001 C CNN
-F 1 "GND" H 8830 2267 50  0000 C CNN
-F 2 "" H 8825 2440 50  0001 C CNN
-F 3 "" H 8825 2440 50  0001 C CNN
-	1    8825 2440
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8825 2125 8825 2440
+	8650 1600 8650 1400
+$Comp
+L dk_USB-DVI-HDMI-Connectors:UE27AC54100 J1
+U 1 1 5D0D6B04
+P 8950 1800
+F 0 "J1" H 8847 1845 60  0000 R CNN
+F 1 "UE27AC54100" H 8847 1739 60  0000 R CNN
+F 2 "digikey-footprints:USB_A_Female_UE27AC54100" H 9150 2000 60  0001 L CNN
+F 3 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" H 9150 2100 60  0001 L CNN
+F 4 "UE27AC54100-ND" H 9150 2200 60  0001 L CNN "Digi-Key_PN"
+F 5 "UE27AC54100" H 9150 2300 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 9150 2400 60  0001 L CNN "Category"
+F 7 "USB, DVI, HDMI Connectors" H 9150 2500 60  0001 L CNN "Family"
+F 8 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" H 9150 2600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/amphenol-icc-commercial-products/UE27AC54100/UE27AC54100-ND/1972253" H 9150 2700 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN RCPT USB2.0 TYPEA 4POS R/A" H 9150 2800 60  0001 L CNN "Description"
+F 11 "Amphenol ICC (Commercial Products)" H 9150 2900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9150 3000 60  0001 L CNN "Status"
+	1    8950 1800
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
